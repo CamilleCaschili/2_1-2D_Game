@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id='mycanvas'>
+    </canvas>
+
+    <script>
+        const canvas = document.querySelector("canvas");
+
+        resize()
+        window.addEventListener('resize', resize)
+
+        function resize() {
+            canvas.width = window.innerWidth - 20;
+            canvas.height = window.innerHeight - 20;
+        }
+
+    </script>
+</body>
+
+</html>

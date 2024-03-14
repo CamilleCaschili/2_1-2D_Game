@@ -1,0 +1,11 @@
+body
+{
+    background-color: #000;
+    overflow: hidden;
+}
+
+#mycanvas
+{
+    background-color: #9e1d1d;
+    border: 1px solid #fff;
+}
