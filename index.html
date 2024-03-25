@@ -8,15 +8,18 @@
 </head>
 
 <body style="background-color: black; overflow: hidden;">
-    <canvas id='mycanvas' style="background-color: #9e1d1d; display: none;">
+    <canvas id='mycanvas' style="background-color: white; display: none;">
     </canvas>
 
-    <div id="menuScreen" style="display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative; width: 100%; height: 100%;">
+    <div id="menuScreen"
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative; width: 100%; height: 100vh;">
         <img src="imgs/bg_maze.jpeg" style="width: 100%; height: 100%; position: absolute; object-fit: cover;">
-        <h1 style="color: antiquewhite; font-size: x-large; text-align: center; position: relative;">THE MAZE</h1>
+        <h1
+            style="color: black; border-radius: 3px; border: 3px solid aqua; font-size: 200px; text-align: center; position: relative; padding: 20px; background-color: rgba(255, 255, 255, 0.5); box-shadow: 0px 0px 10px aqua;">
+            THE MAZE</h1>
         <div
             style="display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative;">
-            <button style="margin: 10px; padding: 10px; font-size: large;" onclick=load_imgs()>Start</button>
+            <button style="margin: 10px; padding: 10px; font-size: 100px;" onclick=load_imgs()>Start</button>
         </div>
     </div>
 
@@ -41,9 +44,9 @@
 
 
         function all_loaded() {
-            draw(game_data['states']['1-a']['bk_img_loaded']);
             $("#menuScreen").hide();
             $('#mycanvas').show();
+            draw(game_data['states']['1-a']['bk_img_loaded']);
         }
 
         function load_imgs() {
@@ -54,7 +57,7 @@
                     game_data['states'][key]['bk_img_loaded'].src = game_data['states'][key]['bk_img'];
                 }
             }
-            all_loaded();
+            setTimeout(all_loaded, 500);
         }
 
         document.body.onkeydown = function (e) {
