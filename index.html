@@ -4,16 +4,21 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <title>2D Game</title>
+    <title>The Maze</title>
 </head>
 
 <body style="background-color: black; overflow: hidden;">
-    <canvas id='mycanvas' style="background-color: #9e1d1d;">
+    <canvas id='mycanvas' style="background-color: #9e1d1d; display: none;">
     </canvas>
 
-    <!-- <div id="splash" style="font-size:100px"> Loading... <br>
-        <img src="imgs/mario.gif">
-    </div> -->
+    <div id="menuScreen" style="display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative; width: 100%; height: 100%;">
+        <img src="imgs/bg_maze.jpeg" style="width: 100%; height: 100%; position: absolute; object-fit: cover;">
+        <h1 style="color: antiquewhite; font-size: x-large; text-align: center; position: relative;">THE MAZE</h1>
+        <div
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; position: relative;">
+            <button style="margin: 10px; padding: 10px; font-size: large;" onclick=load_imgs()>Start</button>
+        </div>
+    </div>
 
     <script>
         const canvas = document.querySelector("canvas");
@@ -25,26 +30,21 @@
         var game_data;
 
         function resize() {
-            canvas.width = window.innerWidth - 20;
-            canvas.height = window.innerHeight - 20;
-
-            try {
-                draw(game_data['states'][current_state]['bk_img_loaded']);
-            } catch (err) {
-            }
-
+            canvas.width = window.innerWidth - 15;
+            canvas.height = window.innerHeight - 15;
         }
 
         $.getJSON("data/map.json", function (data) {
             game_data = data;
             current_state = data['start_state'];
-            load_imgs();
         });
 
 
-        // function all_loaded() {
-        //     draw(game_data['states']['0,0-a']['bk_img_loaded']);
-        // }
+        function all_loaded() {
+            draw(game_data['states']['1-a']['bk_img_loaded']);
+            $("#menuScreen").hide();
+            $('#mycanvas').show();
+        }
 
         function load_imgs() {
             for (var key in game_data['states']) {
@@ -54,25 +54,11 @@
                     game_data['states'][key]['bk_img_loaded'].src = game_data['states'][key]['bk_img'];
                 }
             }
-            // all_loaded();
-            draw(game_data['states']['0,0-a']['bk_img_loaded']);
+            all_loaded();
         }
 
-        const up_arrow = 38;
-        const down_arrow = 40;
-        const left_arrow = 37;
-        const right_arrow = 39;
-
-        var cur_pos_x = 0;
-        var cur_pos_y = 0;
-
-
         document.body.onkeydown = function (e) {
-            if (e.keyCode == up_arrow) {
-                cur_pos_x = cur_pos_x + 1;
-            }
             key_input(e.keyCode)
-
         };
 
         function key_input(what_key) {
@@ -97,17 +83,6 @@
             var ctx = canvas.getContext('2d');
             ctx.drawImage(img, 0, 0, img.width, img.height);
         }
-
-        function draw_src(src, x, y, w, h) {
-            var ctx = canvas.getContext('2d');
-            var img = new Image();
-            img.onload = function () {
-                ctx.drawImage(img, x, y, w, h);
-            };
-            img.src = src;
-        }
-
-
     </script>
 </body>
 

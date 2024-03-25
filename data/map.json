@@ -1,157 +1,1309 @@
 {
-    "start_state": "0,0-a",
+    "start_state": "1-a",
     "states": {
-        "0,0-a": {
+        "1-a": {
             "bk_img": "imgs/pos_1_a.png",
             "next_state": [
                 {
-                    "state_name": "0,1-a",
+                    "state_name": "2-a",
                     "key_input": 38
                 },
                 {
-                    "state_name": "0,0-b",
+                    "state_name": "1-b",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,0-c",
+                    "state_name": "1-c",
                     "key_input": 40
                 },
                 {
-                    "state_name": "0,0-d",
+                    "state_name": "1-d",
                     "key_input": 37
                 }
             ]
         },
-        "0,0-b": {
+        "1-b": {
             "bk_img": "imgs/pos_1_b.png",
             "next_state": [
                 {
-                    "state_name": "1,0-b",
-                    "key_input": 38
-                },
-                {
-                    "state_name": "0,0-c",
+                    "state_name": "1-c",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,0-a",
+                    "state_name": "1-a",
                     "key_input": 37
                 },
                 {
-                    "state_name": "0,0-d",
+                    "state_name": "1-d",
                     "key_input": 40
                 }
             ]
         },
-        "0,0-c": {
+        "1-c": {
             "bk_img": "imgs/pos_1_c.png",
             "next_state": [
                 {
-                    "state_name": "0,0-a",
+                    "state_name": "1-a",
                     "key_input": 40
                 },
                 {
-                    "state_name": "0,0-d",
+                    "state_name": "1-d",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,0-b",
+                    "state_name": "1-b",
                     "key_input": 37
                 }
             ]
         },
-        "0,0-d": {
+        "1-d": {
             "bk_img": "imgs/pos_1_d.png",
             "next_state": [
                 {
-                    "state_name": "0,0-b",
+                    "state_name": "1-b",
                     "key_input": 40
                 },
                 {
-                    "state_name": "0,0-a",
+                    "state_name": "1-a",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,0-c",
+                    "state_name": "1-c",
                     "key_input": 37
+                },
+                {
+                    "state_name": "11-d",
+                    "key_input": 38
                 }
             ]
         },
-        "0,1-a": {
+        "2-a": {
             "bk_img": "imgs/pos_2_a.png",
             "next_state": [
                 {
-                    "state_name": "0,2-a",
-                    "key_input": 38
-                },
-                {
-                    "state_name": "0,1-b",
+                    "state_name": "2-b",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,1-c",
+                    "state_name": "2-c",
                     "key_input": 40
                 },
                 {
-                    "state_name": "0,1-d",
+                    "state_name": "2-d",
                     "key_input": 37
                 }
             ]
         },
-        "0,1-b": {
+        "2-b": {
             "bk_img": "imgs/pos_2_b.png",
             "next_state": [
                 {
-                    "state_name": "0,1-c",
+                    "state_name": "2-c",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,1-a",
+                    "state_name": "2-a",
                     "key_input": 37
                 },
                 {
-                    "state_name": "0,1-d",
+                    "state_name": "2-d",
                     "key_input": 40
+                },
+                {
+                    "state_name": "3-b",
+                    "key_input": 38
                 }
             ]
         },
-        "0,1-c": {
+        "2-c": {
             "bk_img": "imgs/pos_2_c.png",
             "next_state": [
                 {
-                    "state_name": "0,0-c",
+                    "state_name": "1-c",
                     "key_input": 38
                 },
                 {
-                    "state_name": "0,1-a",
+                    "state_name": "2-a",
                     "key_input": 40
                 },
                 {
-                    "state_name": "0,1-d",
+                    "state_name": "2-d",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,1-b",
+                    "state_name": "2-b",
                     "key_input": 37
                 }
             ]
         },
-        "0,1-d": {
+        "2-d": {
             "bk_img": "imgs/pos_2_d.png",
             "next_state": [
                 {
-                    "state_name": "0,1-b",
+                    "state_name": "2-b",
                     "key_input": 40
                 },
                 {
-                    "state_name": "0,1-a",
+                    "state_name": "2-a",
                     "key_input": 39
                 },
                 {
-                    "state_name": "0,1-c",
+                    "state_name": "2-c",
                     "key_input": 37
                 }
             ]
+        },
+        "3-a": {
+            "bk_img": "imgs/pos_3_a.png",
+            "next_state": [
+                {
+                    "state_name": "3-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "3-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "3-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "4-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "3-b": {
+            "bk_img": "imgs/pos_3_b.png",
+            "next_state": [
+                {
+                    "state_name": "3-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "3-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "3-d",
+                    "key_input": 40
+                }
+            ]
+        },
+        "3-c": {
+            "bk_img": "imgs/pos_3_c.png",
+            "next_state": [
+                {
+                    "state_name": "3-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "3-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "3-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "12-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "3-d": {
+            "bk_img": "imgs/pos_3_d.png",
+            "next_state": [
+                {
+                    "state_name": "3-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "3-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "3-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "2-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "4-a": {
+            "bk_img": "imgs/pos_4_a.png",
+            "next_state": [
+                {
+                    "state_name": "4-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "4-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "4-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "5-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "4-b": {
+            "bk_img": "imgs/pos_4_b.png",
+            "next_state": [
+                {
+                    "state_name": "4-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "4-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "4-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "14-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "4-c": {
+            "bk_img": "imgs/pos_4_c.png",
+            "next_state": [
+                {
+                    "state_name": "4-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "4-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "4-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "3-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "4-d": {
+            "bk_img": "imgs/pos_4_d.png",
+            "next_state": [
+                {
+                    "state_name": "4-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "4-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "4-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "13-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "5-a": {
+            "bk_img": "imgs/pos_5_a.png",
+            "next_state": [
+                {
+                    "state_name": "5-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "5-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "5-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "5-b": {
+            "bk_img": "imgs/pos_5_b.png",
+            "next_state": [
+                {
+                    "state_name": "5-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "5-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "5-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "6-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "5-c": {
+            "bk_img": "imgs/pos_5_c.png",
+            "next_state": [
+                {
+                    "state_name": "5-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "5-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "5-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "4-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "5-d": {
+            "bk_img": "imgs/pos_5_d.png",
+            "next_state": [
+                {
+                    "state_name": "5-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "5-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "5-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "6-a": {
+            "bk_img": "imgs/pos_6_a.png",
+            "next_state": [
+                {
+                    "state_name": "6-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "6-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "6-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "9-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "6-b": {
+            "bk_img": "imgs/pos_6_b.png",
+            "next_state": [
+                {
+                    "state_name": "6-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "6-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "6-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "7-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "6-c": {
+            "bk_img": "imgs/pos_6_c.png",
+            "next_state": [
+                {
+                    "state_name": "6-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "6-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "6-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "6-d": {
+            "bk_img": "imgs/pos_6_d.png",
+            "next_state": [
+                {
+                    "state_name": "6-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "6-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "6-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "5-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "7-a": {
+            "bk_img": "imgs/pos_7_a.png",
+            "next_state": [
+                {
+                    "state_name": "7-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "7-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "7-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "7-b": {
+            "bk_img": "imgs/pos_7_b.png",
+            "next_state": [
+                {
+                    "state_name": "7-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "7-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "7-d",
+                    "key_input": 40
+                }
+            ]
+        },
+        "7-c": {
+            "bk_img": "imgs/pos_7_c.png",
+            "next_state": [
+                {
+                    "state_name": "7-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "7-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "7-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "8-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "7-d": {
+            "bk_img": "imgs/pos_7_d.png",
+            "next_state": [
+                {
+                    "state_name": "7-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "7-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "7-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "6-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "8-a": {
+            "bk_img": "imgs/pos_8_a.png",
+            "next_state": [
+                {
+                    "state_name": "8-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "8-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "8-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "7-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "8-b": {
+            "bk_img": "imgs/pos_8_b.png",
+            "next_state": [
+                {
+                    "state_name": "8-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "8-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "8-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "win",
+                    "key_input": 38
+                }
+            ]
+        },
+        "8-c": {
+            "bk_img": "imgs/pos_8_c.png",
+            "next_state": [
+                {
+                    "state_name": "8-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "8-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "8-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "8-d": {
+            "bk_img": "imgs/pos_8_d.png",
+            "next_state": [
+                {
+                    "state_name": "8-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "8-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "8-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "9-a": {
+            "bk_img": "imgs/pos_9_a.png",
+            "next_state": [
+                {
+                    "state_name": "9-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "9-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "9-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "9-b": {
+            "bk_img": "imgs/pos_9_b.png",
+            "next_state": [
+                {
+                    "state_name": "9-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "9-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "9-d",
+                    "key_input": 40
+                }
+            ]
+        }, 
+        "9-c": {
+            "bk_img": "imgs/pos_9_c.png",
+            "next_state": [
+                {
+                    "state_name": "9-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "9-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "9-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "6-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "9-d": {
+            "bk_img": "imgs/pos_9_d.png",
+            "next_state": [
+                {
+                    "state_name": "9-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "9-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "9-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "10-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "10-a": {
+            "bk_img": "imgs/pos_10_a.png",
+            "next_state": [
+                {
+                    "state_name": "10-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "10-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "10-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "10-b": {
+            "bk_img": "imgs/pos_10_b.png",
+            "next_state": [
+                {
+                    "state_name": "10-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "10-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "10-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "9-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "10-c": {
+            "bk_img": "imgs/pos_10_c.png",
+            "next_state": [
+                {
+                    "state_name": "10-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "10-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "10-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "11-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "10-d": {
+            "bk_img": "imgs/pos_10_d.png",
+            "next_state": [
+                {
+                    "state_name": "10-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "10-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "10-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "11-a": {
+            "bk_img": "imgs/pos_11_a.png",
+            "next_state": [
+                {
+                    "state_name": "11-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "11-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "11-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "10-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "11-b": {
+            "bk_img": "imgs/pos_11_b.png",
+            "next_state": [
+                {
+                    "state_name": "11-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "11-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "11-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "1-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "11-c": {
+            "bk_img": "imgs/pos_11_c.png",
+            "next_state": [
+                {
+                    "state_name": "11-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "11-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "11-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "11-d": {
+            "bk_img": "imgs/pos_11_d.png",
+            "next_state": [
+                {
+                    "state_name": "11-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "11-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "11-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "12-a": {
+            "bk_img": "imgs/pos_12_a.png",
+            "next_state": [
+                {
+                    "state_name": "12-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "12-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "12-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "3-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "12-b": {
+            "bk_img": "imgs/pos_12_b.png",
+            "next_state": [
+                {
+                    "state_name": "12-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "12-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "12-d",
+                    "key_input": 40
+                }
+            ]
+        },
+        "12-c": {
+            "bk_img": "imgs/pos_12_c.png",
+            "next_state": [
+                {
+                    "state_name": "12-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "12-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "12-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "12-d": {
+            "bk_img": "imgs/pos_12_d.png",
+            "next_state": [
+                {
+                    "state_name": "12-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "12-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "12-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "13-a": {
+            "bk_img": "imgs/pos_13_a.png",
+            "next_state": [
+                {
+                    "state_name": "13-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "13-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "13-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "13-b": {
+            "bk_img": "imgs/pos_13_b.png",
+            "next_state": [
+                {
+                    "state_name": "13-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "13-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "13-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "4-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "13-c": {
+            "bk_img": "imgs/pos_13_c.png",
+            "next_state": [
+                {
+                    "state_name": "13-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "13-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "13-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "13-d": {
+            "bk_img": "imgs/pos_13_d.png",
+            "next_state": [
+                {
+                    "state_name": "13-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "13-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "13-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "4-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "14-a": {
+            "bk_img": "imgs/pos_14_a.png",
+            "next_state": [
+                {
+                    "state_name": "14-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "14-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "14-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "14-b": {
+            "bk_img": "imgs/pos_14_b.png",
+            "next_state": [
+                {
+                    "state_name": "14-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "14-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "14-d",
+                    "key_input": 40
+                }
+            ]
+        },
+        "14-c": {
+            "bk_img": "imgs/pos_14_c.png",
+            "next_state": [
+                {
+                    "state_name": "14-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "14-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "14-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "15-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "14-d": {
+            "bk_img": "imgs/pos_14_d.png",
+            "next_state": [
+                {
+                    "state_name": "14-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "14-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "14-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "4-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "15-a": {
+            "bk_img": "imgs/pos_15_a.png",
+            "next_state": [
+                {
+                    "state_name": "15-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "15-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "15-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "14-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "15-b": {
+            "bk_img": "imgs/pos_15_b.png",
+            "next_state": [
+                {
+                    "state_name": "15-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "15-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "15-d",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "16-b",
+                    "key_input": 38
+                }
+            ]
+        },
+        "15-c": {
+            "bk_img": "imgs/pos_15_c.png",
+            "next_state": [
+                {
+                    "state_name": "15-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "15-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "15-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "15-d": {
+            "bk_img": "imgs/pos_15_d.png",
+            "next_state": [
+                {
+                    "state_name": "15-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "15-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "15-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "16-a": {
+            "bk_img": "imgs/pos_16_a.png",
+            "next_state": [
+                {
+                    "state_name": "16-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "16-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "16-d",
+                    "key_input": 37
+                }
+            ]
+        },
+        "16-b": {
+            "bk_img": "imgs/pos_16_b.png",
+            "next_state": [
+                {
+                    "state_name": "16-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "16-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "16-d",
+                    "key_input": 40
+                }
+            ]
+        },
+        "16-c": {
+            "bk_img": "imgs/pos_16_c.png",
+            "next_state": [
+                {
+                    "state_name": "16-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "16-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "16-b",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "17-c",
+                    "key_input": 38
+                }
+            ]
+        },
+        "16-d": {
+            "bk_img": "imgs/pos_16_d.png",
+            "next_state": [
+                {
+                    "state_name": "16-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "16-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "16-c",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "15-d",
+                    "key_input": 38
+                }
+            ]
+        },
+        "17-a": {
+            "bk_img": "imgs/pos_17_a.png",
+            "next_state": [
+                {
+                    "state_name": "17-b",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "17-c",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "17-d",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "16-a",
+                    "key_input": 38
+                }
+            ]
+        },
+        "17-b": {
+            "bk_img": "imgs/pos_17_b.png",
+            "next_state": [
+                {
+                    "state_name": "17-c",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "17-a",
+                    "key_input": 37
+                },
+                {
+                    "state_name": "17-d",
+                    "key_input": 40
+                }
+            ]
+        },
+        "17-c": {
+            "bk_img": "imgs/pos_17_c.png",
+            "next_state": [
+                {
+                    "state_name": "17-a",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "17-d",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "17-b",
+                    "key_input": 37
+                }
+            ]
+        },
+        "17-d": {
+            "bk_img": "imgs/pos_17_d.png",
+            "next_state": [
+                {
+                    "state_name": "17-b",
+                    "key_input": 40
+                },
+                {
+                    "state_name": "17-a",
+                    "key_input": 39
+                },
+                {
+                    "state_name": "17-c",
+                    "key_input": 37
+                }
+            ]
+        },
+        "win": {
+            "bk_img": "imgs/win.jpg",
+            "next_state": []
         }
     }
 }
